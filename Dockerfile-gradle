@@ -1,0 +1,10 @@
+FROM gradle:7.2-jdk11
+
+WORKDIR /app
+
+COPY . .
+
+RUN gradle build -x test --no-daemon
+
+# COPY /app/build/libs/* /usr/local/tomcat/webapps/myapp
+
