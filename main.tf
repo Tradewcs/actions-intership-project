@@ -17,7 +17,7 @@ resource "docker_image" "node" {
 
 resource "docker_container" "node" {
   image = docker_image.node.name
-  name  = "node_container"
+  name  = "node_container_github_actions"
 
   ports {
     internal = 3000
