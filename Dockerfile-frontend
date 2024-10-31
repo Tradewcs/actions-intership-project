@@ -3,6 +3,7 @@ FROM node:14.17.4
 WORKDIR /app
 COPY . .
 RUN npm install
+WORKDIR /app/frontend
 
 EXPOSE 3000
 
