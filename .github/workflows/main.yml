@@ -28,4 +28,4 @@ jobs:
           TF_VAR_image_name_frontend: tradewcs/frontend-internship-proj
           TF_VAR_image_name_gradle: tradewcs/gradle-intrernship-proj
           TF_VAR_image_tag: latest
-        run: terraform apply
+        run: yes | terraform apply
