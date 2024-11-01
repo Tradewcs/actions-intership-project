@@ -47,7 +47,7 @@ variable "image_tag" {
 resource "null_resource" "docker_login" {
   provisioner "local-exec" {
     command = <<-EOT
-      docker login -u "${var.dockerhub_username}" --password-stdin
+      docker login -u "${var.dockerhub_username}" -p "${var.dockerhub_password}"
     EOT
   }
 }
