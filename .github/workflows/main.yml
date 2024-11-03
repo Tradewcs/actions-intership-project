@@ -25,7 +25,7 @@ jobs:
         env:
           TF_VAR_dockerhub_username: ${{ secrets.DOCKER_USERNAME }}
           TF_VAR_dockerhub_password: ${{ secrets.DOCKER_PASSWORD }}
-          TF_VAR_image_name_frontend: tradewcs/frontend-internship-proj
-          TF_VAR_image_name_gradle: tradewcs/gradle-intrernship-proj
+          TF_VAR_image_name_frontend: frontend-internship-proj
+          TF_VAR_image_name_gradle: gradle-intrernship-proj
           TF_VAR_image_tag: latest
-        run: yes | terraform apply -auto-approve
+        run: terraform apply -auto-approve
